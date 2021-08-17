@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+         .textStroke
+         {
+            color: lightcyan;
+            -webkit-text-stroke: 2px black; /* vendor prefix */
+            font-size: 500%; /* increasing the font size */
+         }
+		body{
+				background-image: url("bgimg_1.jpg");
+				background-color: #cccccc;
+			}
+
+		.serif{
+				font-family: "Arial", Arial, serif;
+			}
+		
+		.sans {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+		.schedC{
+				color: #b90000;
+			}
+		
+         th {
+				border: 1px solid black;
+				padding: 10px;
+			}
+		 td	{
+				padding: 5px;
+			}
+		.introDiv{
+				padding-left: 20px;
+			}
+			
+		div	{
+				text-align: left;
+			}
+			
+		div p{
+				padding-left:30px;
+			}
+			
+		.left{
+				float: left;
+				padding: 0 15px 0 0;
+			}
+
+		div.school {
+				  background-color: #EBF4FA;
+				  padding: 20px;
+				  
+				  background-color: #EBF4FA;
+				  position: relative;
+				  animation-name: highlightSched;
+				  animation-duration: 8s;
+				  animation-iteration-count: infinite;
+			}
+			
+		@media screen and (max-width: 800px) {
+			  div.school {
+				display: none;
+			  }
+			  div.square{
+			    display: none;
+			  }
+		}
+
+		div.square {
+				  width: 10px;
+				  height: 10px;
+				  background-color: red;
+				  position: relative;
+				  animation-name: highlightPic;
+				  animation-duration: 4s;
+				  animation-iteration-count: infinite;
+			}	
+
+		@keyframes highlightPic {
+		  0%   {background-color:red; left:-10px; top:0px;}
+		  25%  {background-color:yellow; left:177px; top:0px;}
+		  50%  {background-color:blue; left:177px; top:221px;}
+		  75%  {background-color:green; left:-10px; top:221px;}
+		  100% {background-color:red; left:-10px; top:0px;}
+		}
+		
+		@keyframes highlightSched {
+		  0%   {background-color:#EBF4FA;}
+		  25%  {background-color:#FFFFCC;}
+		  50%  {background-color:#C3FDB8;}
+		  75%  {background-color:#E0B0FF;}
+		  100% {background-color:#EBF4FA;}
+		}
+
+	</style>
+
+		<title class = "textStroke">CS 4300 - Web Programming - Jeffrey Tijerina</title>
+	</head>
+		
+		<body>
+			
+			<h1 class = "serif">Jeffrey Tijerina</h1>
+			
+			<h4 class = "serif">CS 4300 - Web Programming Homework 2</h4>
+
+			<div class = "square"></div>
+			<img src="./jeffrey pictures/jeffrey.jpg" alt="If you ever see me around don't be afraid to say hi!" width="177" height="211" class = "left" />
+			
+			<!-- <div class = "introDiv">-->
+			<div>			
+			<p class = "sans">
+				Hello, my name is Jeffrey Tijerina, I'm a senior at the University of Houston – Downtown with interests in machine learning for applications in medicine, bioinformatics, and computational genomics.
+			</p>
+			
+			<p class = "sans">
+				When I graduate, I hope to find a position in a company that utilizes software developers for research within medicine.
+			</p>
+			
+			<p class = "sans">
+				Outside of school I enjoy good food, going to the gym, cycling, learning many different things, and video games among several other activities.
+			</p>
+			
+			<p class = "sans">	
+				When I’m trying to relax, I enjoy watching <a href = "https://www.netflix.com">Netflix</a>, browsing <a href = "https://www.reddit.com">Reddit</a>, and consuming different content through <a href = "https://www.youtube.com">YouTube</a>.
+			</p>
+			
+			<p class = "sans">
+				I am taking CS 4300 – Web Programming as an elective and enjoying the class and encouragement from Professor Zhang. I prefer taking classes on campus as I feel that I learn better in a face-to-face format but am trying my best to acclimate myself to online learning in order to succeed for graduation. I miss being able to interact with my classmates and form study groups as well as having a dedicated place to study or go to the library for quiet time during projects and exams.
+			</p>
+			
+			<p class = "sans">
+				I’m looking forward to graduation and am hopeful that we all find fulfilling work and many different enriching hobbies during these strange and difficult times. Please remember to stay safe and wear a mask when meeting up around groups of people!
+			</p>
+			
+			</div>
+			
+				<br>
+			
+			<div class = "school">
+			
+			<b style = "font-size: 16pt; color: #000080;" class = "serif">This 2020 fall semester I'm taking the following classes:</b>
+			
+
+				<table border = "1">
+				
+				<tr>
+					<th>Monday</th>
+					
+					<th>Tuesday</th>
+					
+					<th>Wednesday</th>
+					
+					<th>Thursday</th>
+					
+					<th>Friday</th>
+				</tr>
+				
+				<tr>
+				
+					<!--MONDAY cell-->
+					
+					<!--Operating System Concepts-->
+					<td>
+					<table>
+						<tr>
+							<td>
+								<b>11:30 am - 12:45 pm</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style = padding: 20px class = "schedC">
+								CS 4315 - Operating System Concepts
+								<ul><li>Dr. Ling Xu</li></ul>
+							</td>
+						</tr>
+					</table>
+					
+					<!--Set Theory-->
+					<table>
+						<tr>
+							<td>
+								<b>1:00pm - 2:15pm</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style = padding: 20px" class = "schedC">
+								MATH 3312 - Set Theory
+								<ul><li>Dr. Ryan Pepper</li></ul>
+							</td>
+						</tr>
+					</table>
+					
+					</td>
+					
+					<!--TUESDAY cell-->
+					
+					<!--Web Programming-->
+					<td>
+					<table>
+						<tr>
+							<td>
+								<b>11:30am - 12:45pm</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style = padding: 20px" class = "schedC">
+								CS 4300 - Web Programming
+								<ul><li>Dr. Ting Zhang</li></ul>
+							</td>
+						</tr>
+					</table>
+					
+					<!--Senior Seminar-->
+					<table>
+						<tr>
+							<td>
+								<b>Tuesday 4 pm - 5:15 pm</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style = padding: 20px" class = "schedC">
+								CS 4294 - Senior Seminar
+								<ul><li>Dr. Hong Lin</li></ul>
+							</td>
+						</tr>
+					</table>
+					</td>
+
+					<!--WEDNESDAY cell-->
+					
+					<!--Operating System Concepts-->
+					<td>
+					<table>
+						<tr>
+							<td>
+								<b>11:30 am - 12:45 pm</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style = padding: 20px" class = "schedC">
+								CS 4315 - Operating System Concepts
+								<ul><li>Dr. Ling Xu</li></ul>
+							</td>
+						</tr>
+					</table>
+					
+					<!--Set Theory-->
+					<table>
+						<tr>
+							<td>
+								<b>1:00pm - 2:15pm</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style = padding: 20px" class = "schedC">
+								MATH 3312 - Set Theory
+								<ul><li>Dr. Ryan Pepper</li></ul>
+							</td>
+						</tr>
+					</table>
+					</td>
+
+					<!--THURSDAY cell-->
+					
+					<!--Web Programming-->
+					<td>
+					<table>
+						<tr>
+							<td>
+								<b>11:30am - 12:45pm</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style = padding: 20px" class = "schedC">
+								CS 4300 - Web Programming
+								<ul><li>Dr. Ting Zhang</li></ul>
+							</td>
+						</tr>
+					</table>
+					</td>
+
+					<!--FRIDAY cell-->
+					
+					<!--Web Programming-->
+					<td>
+						<b style = padding: 20px" class = "schedC">HOMEWORK/STUDY</b>
+					</td>
+					
+				</tr>
+			</table>
+			</div>
+<br>
+<p>If you would like to connect please fill out the following form:</p>
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="">
+  &nbsp; &nbsp; 
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" value="">
+  &nbsp; &nbsp;
+  <label for="email">Phone number:</label>
+  <input type="text" id="phoneNumber" name="phoneNumber" value=""><br><br>
+
+  <input type="submit" value="Submit">
+</form> 
+
+			
+		</body>
+</html>

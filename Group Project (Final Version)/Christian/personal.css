@@ -1,0 +1,138 @@
+body          {font-family:helvetica; 
+    font-size: 10pt; 
+    background-color: black;}   
+
+ul            {color: #F7268B;
+    font-size: 15pt; 
+    font-family: helvetica; 
+    font-weight: bold;}
+
+															
+
+h1            {font-family:helvetica;
+    -webkit-text-stroke: 2px aquamarine;
+    font-size: 900%;         
+    float: left;
+    margin-right: 120px;
+    margin-top: 50px;}
+
+h2            {font-size: 300%; 
+    color: black;
+    -webkit-text-stroke: 0.8px #FF80BE;}
+
+p             {font-family:helvetica;
+    color: aquamarine;
+    font-size: 15pt;
+float:left; 
+    margin-right: 120px;
+    margin-top: 50px;}
+
+caption       {color:black;
+    -webkit-text-stroke: 2px #6CFF8B;
+    font-size: 300%; }
+
+thead         {color:#6CFF8B;
+    font-family:helvetica;} 
+
+tbody         {color:#6CFF8B;
+    font-family:helvetica }
+
+div 	      {border: 3px solid navy;
+    padding: 5px 20px; 
+    background: black;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px; /* adding rounded corners */
+    margin-bottom: 20px;}
+   #round2       {width: 200px;
+           height: 200px;
+                  padding: 5px; 
+                  text-align: center;
+                  background: -webkit-radial-gradient(center, aquamarine, teal);
+                  background: -moz-radial-gradient(center, aquamarine, teal);
+                  background: radial-gradient(center, aquamarine, pink);}
+   #round3       {width: 200px;
+                  height: 200px;
+                  padding: 5px; 
+                  text-align: center;
+                  background: -webkit-radial-gradient(center, yellow, red);
+                  background: -moz-radial-gradient(center, yellow, red);
+                  background: radial-gradient(center, yellow, red);}
+
+.special     {color: violet; 
+   font-family: times new roman;}
+
+
+
+#cover 
+{
+ position: relative;
+ margin: 0 auto;	
+}
+#cover img 
+{
+ position: absolute;
+ left: 0;
+ -webkit-transition: opacity 1s ease-in-out;
+ transition: opacity 1s ease-in-out;
+}
+#cover img.top:hover 
+ { opacity:0; }
+
+
+
+.skew .textbox 
+{
+ margin-left: 75px;
+ background: black;
+ height: 100px;
+ width: 200px;
+ padding: 25px 0;
+ text-align: center;
+ font-size: 250%;
+ border: 3px solid aquamarine;
+ border-radius:15px;
+ -webkit-animation: skew 3s infinite linear;
+ -moz-animation: skew 3s infinite linear;
+ animation: skew 3s infinite linear;
+}
+@-webkit-keyframes skew 
+{
+ from { -webkit-transform: skewX(0deg); }
+ 25% { -webkit-transform: skewX(45deg); }
+ 50% { -webkit-transform: skewX(0); }
+ 75% { -webkit-transform: skewX(-45deg); }
+ to { -webkit-transform: skewX(0); }
+}
+@-moz-keyframes skew 
+{
+ from { -moz-transform: skewX(0deg); }
+ 25% { -moz-transform: skewX(45deg); }
+ 50% { -moz-transform: skewX(0); }
+ 75% { -moz-transform: skewX(-45deg); }
+ to { -moz-transform: skewX(0); }
+}
+@keyframes skew 
+{
+ from { transform: skewX(0deg); }
+ 25% { transform: skewX(45deg); }
+ 50% { transform: skewX(0); }
+ 75% { transform: skewX(-45deg); }
+ to { transform: skewX(0); }
+}
+
+
+
+
+
+
+/*
+Color List
+Teal
+Beige
+Aquamarine 
+Pink
+Black
+Lavender
+plum
+*/
